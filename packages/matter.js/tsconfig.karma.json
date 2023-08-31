@@ -1,0 +1,18 @@
+/* Karma unit tests configuration */
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "module": "commonjs", // Required for Karma web test
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*.ts", "test/**/*.ts"],
+  
+  "typeRoots": [
+    "./node_modules/@types",
+    "./test/support"
+  ],
+
+  "types": [
+    "globals"
+  ]
+}
